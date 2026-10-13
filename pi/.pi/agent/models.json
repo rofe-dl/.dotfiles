@@ -1,0 +1,27 @@
+{
+  "providers": {
+    "rofedl-llm": {
+      "baseUrl": "http://192.168.68.111:1234/v1",
+      "api": "openai-completions",
+      "apiKey": "dummy",
+      "models": [
+        {
+          "id": "qwen3.8-27b",
+          "name": "Qwen3.8 27B",
+          "input": [
+            "text"
+          ],
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": null,
+            "low": "low",
+            "medium": "medium",
+            "high": null,
+            "xhigh": "xhigh"
+          }
+        }
+      ]
+    }
+  }
+}

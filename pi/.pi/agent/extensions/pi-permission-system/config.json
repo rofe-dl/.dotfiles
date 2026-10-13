@@ -1,0 +1,42 @@
+{
+  "permission": {
+    "*": "allow",
+    "path": {
+      "*": "allow",
+      "~/.ssh*": "deny",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow"
+    },
+    "bash": {
+      "*": "ask",
+      "rm -rf *": "deny",
+      "sudo *": "ask",
+      "git status*": "allow",
+      "git diff*": "allow",
+      "git log*": "allow",
+      "git show*": "allow",
+      "git branch*": "allow",
+      "git ls-files*": "allow",
+      "git ls-remote*": "allow",
+      "git rev-parse*": "allow",
+      "git describe*": "allow",
+      "git shortlog*": "allow",
+      "git reflog*": "allow",
+      "git show-ref*": "allow",
+      "git tag*": "allow",
+      "git remote*": "allow",
+      "git blame*": "allow"
+    },
+    "external_directory": {
+      "*": "ask",
+      "~/.pi/agent/*": "allow",
+      "~/.cache/*": "allow",
+      "~/.local/*": "allow",
+      "~/.npm/*": "allow",
+      "~/.pnpm-store/*": "allow",
+      "~/.cargo/registry/*": "allow",
+      "~/.rustup/*": "allow"
+    }
+  }
+}

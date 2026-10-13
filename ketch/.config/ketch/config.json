@@ -1,0 +1,12 @@
+{
+  "backend": "searxng",
+  "searxng_url": "http://192.168.68.111:8080",
+  "firecrawl_url": "https://api.firecrawl.dev",
+  "limit": 5,
+  "cache_ttl": "72h",
+  "browser": "/home/rofedl/.cache/ketch/browser/chromium-1321438/chrome",
+  "code_backend": "grepapp",
+  "docs_backend": "context7",
+  "sourcegraph_url": "https://sourcegraph.com",
+  "external_pdf_to_md_converter_timeout_sec": 300
+}
