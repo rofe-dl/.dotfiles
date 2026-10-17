@@ -10,5 +10,5 @@
   "localllm": {
     "servers": []
   },
-  "hideThinkingBlock": false
+  "hideThinkingBlock": true
 }

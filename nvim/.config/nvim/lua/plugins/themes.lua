@@ -54,4 +54,22 @@ return {
     lazy = false,
     config = function() vim.cmd.colorscheme "nightfly" end,
   },
+
+  {
+    "srcery-colors/srcery-vim",
+    name = "srcery-vim",
+    priority = 1000,
+  },
+
+  {
+    "ayu-theme/ayu-vim",
+    name = "ayu-vim",
+    priority = 1000,
+  },
+
+  {
+    "morhetz/gruvbox",
+    name = "gruvbox",
+    priority = 1000,
+  },
 }
