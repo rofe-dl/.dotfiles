@@ -49,6 +49,9 @@ open = [
 	{ run = 'start "" %s1',    desc = "Open", for = "windows", orphan = true },
 	{ run = "termux-open %s1", desc = "Open", for = "android" },
 ]
+firefox = [
+    { run = "firefox %s1", desc = "Firefox", for = "linux", orphan = true }
+]
 reveal = [
 	{ run = "xdg-open %d1",         desc = "Reveal", for = "linux" },
 	{ run = "open -R %s1",          desc = "Reveal", for = "macos" },
@@ -72,6 +75,8 @@ trash = [
 rules = [
 	# Folder
 	{ mime = "folder/*", use = [ "edit", "open", "reveal" ] },
+	# HTML files (MUST come before text/*)
+  { url = "*.{html,htm}", use = [ "firefox" ] },
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
 	# Image
